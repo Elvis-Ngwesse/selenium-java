@@ -1,35 +1,36 @@
 package Pages;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import utils.BaseClass;
 
-public class LoginPage {
-    private WebDriver _driver;
+public class LoginPage extends BaseClass {
     private By username = By.id("username");
+    private By errorMessage = By.cssSelector("[id='flash-messages']>div");
     private By pageTitle = By.cssSelector("div>div>h2");
     private By password = By.id("password");
     private By submit = By.cssSelector("button[type='submit']>i");
-    private BaseClass baseClass = new BaseClass(_driver);
 
-    public LoginPage(WebDriver _driver){
-        this._driver = _driver;
+    public LoginPage(){
     }
 
     public void enterUserName(String text){
-        baseClass.enterTEXT(username,text);
+        enterTEXT(username,text);
     }
 
     public void enterUserPassword(String text){
-        baseClass.enterTEXT(password,text);
+        enterTEXT(password,text);
     }
 
     public void clickSubmitButton(){
-        baseClass.click(submit);
+        click(submit);
     }
 
     public String getPageTitle() {
-        String text = baseClass.getElementText(pageTitle);
+        String text = getElementText(pageTitle);
+        return text;
+    }
+
+    public String getLoginErrorMessage() {
+        String text = getElementText(errorMessage);
         return text;
     }
 }

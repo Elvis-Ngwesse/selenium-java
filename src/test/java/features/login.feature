@@ -1,8 +1,11 @@
 @Regression
-Feature: Test login functionality
+Feature: Test login
 
-  Scenario: Check login with valid credentials
-    Given User navigates to homepage
-    When  User enters "username" and "password"
+  Scenario: Check User login/logout with valid credentials
+    Given User navigates to herokuapp homepage
+    When  User enters "tomsmith" and "SuperSecretPassword!"
     And   User clicks on login button
-    Then  User should see message "You logged into a secure area!"
+    And   User should see message "You logged into a secure area!"
+    And   User clicks on logout button
+    Then  User should see message "You logged out of the secure area!"
+    Then  User verifies page url "http://the-internet.herokuapp.com/login"

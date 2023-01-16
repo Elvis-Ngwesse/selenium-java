@@ -1,5 +1,5 @@
 package utils;
-
+import factory.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -9,16 +9,16 @@ import org.openqa.selenium.support.ui.Wait;
 import java.time.Duration;
 
 public class BaseClass {
-    private WebDriver _driver;
+    protected WebDriver _driver = DriverFactory.getDriver();
 
-    public BaseClass(WebDriver _driver){
-        this._driver = _driver;
+    public BaseClass(){
+
     }
 
-    public void elementWait(By by){
+    protected void elementWait(){
 
         try{
-            Wait<WebDriver> wait = new FluentWait<WebDriver>(_driver)
+            new FluentWait<>(_driver)
                     .withTimeout(Duration.ofSeconds(15))
                     .pollingEvery(Duration.ofSeconds(3))
                     .ignoring(NoSuchElementException.class);
@@ -27,8 +27,8 @@ public class BaseClass {
         }
     }
 
-    public WebElement getElement(By by){
-        this.elementWait(by);
+    protected WebElement getElement(By by){
+        this.elementWait();
         WebElement element = null;
 
         try{
@@ -38,31 +38,43 @@ public class BaseClass {
         }
         return element;
     }
-    public void click(By by){
+    protected void click(By by){
         try{
-            this.getElement(by).click();
+            WebElement element = this.getElement(by);
+            element.click();
         }catch (Exception e){
             e.printStackTrace();
         }
     }
-    public void enterTEXT(By by,String text){
+    protected void enterTEXT(By by,String text){
         try{
-            this.click(by);
-            this.getElement(by).clear();
-            this.getElement(by).sendKeys(text);
+            WebElement element = this.getElement(by);
+            element.click();
+            element.clear();
+            element.sendKeys(text);
         }catch (Exception e){
             e.printStackTrace();
         }
     }
 
-    public String getElementText(By by){
+    protected String getElementText(By by){
         String text = null;
         try{
-            text = this.getElement(by).getText();
+            WebElement element = this.getElement(by);
+            text = element.getText();
         }catch (Exception e){
             e.printStackTrace();
         }
-
         return text;
+    }
+
+    protected String getPageUrl(){
+        String url = null;
+        try{
+            url = _driver.getCurrentUrl();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return url;
     }
 }
