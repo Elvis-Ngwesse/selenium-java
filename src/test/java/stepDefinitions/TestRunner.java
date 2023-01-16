@@ -11,7 +11,8 @@ import org.junit.runner.RunWith;
         ,monochrome = true
         ,plugin = {"pretty","json:target/cucumber-reports/reports.json",
                   "junit:target/cucumber-reports/Cucumber.xml",
-                   "html:target/cucumber-reports/reports2.html"}
+                   "html:target/cucumber-reports/reports2.html",
+                    "html: target/cucumber-reports"}
         ,tags = "@Regression"
 
 )
