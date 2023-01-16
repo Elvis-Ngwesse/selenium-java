@@ -16,5 +16,5 @@ import org.junit.runner.RunWith;
         ,tags = "@Regression"
 
 )
-public  class TestRunner {
+public  class RunCucumberIT {
 }

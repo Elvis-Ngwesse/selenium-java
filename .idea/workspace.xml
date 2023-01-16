@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be984426-05dc-40be-b11d-3189b48f3995" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ target/cucumber-reports" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/reports/extent.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ target/cucumber-reports" beforeDir="false" afterPath="$PROJECT_DIR$/ target/cucumber-reports" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Helper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ApplicationHooks/AppHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ApplicationHooks/AppHooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/loginError.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/loginError.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/reports/ExtentReporting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/reports/ExtentReporting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/reports/reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/reports/reports.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/RunCucumberIT.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,24 +44,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;/Users/elvisngwesse/Desktop/Repositories/JavaAutomationFramework/src/test/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/elvisngwesse/Desktop/Repositories/JavaAutomationFramework/src/test/java/features&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_directory_selection": "/Users/elvisngwesse/Desktop/Repositories/JavaAutomationFramework/src/test/java",
+    "last_opened_file_path": "/Users/elvisngwesse/Desktop/Repositories/JavaAutomationFramework/src/test/java/features",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;JAVA&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JAVA"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/java/features" />
@@ -84,7 +79,7 @@
       <recent name="Pages" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestRunner">
+  <component name="RunManager" selected="JUnit.RunCucumberIT">
     <configuration name="Scenario: Check Nicholas Runolfsdottir V exists" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/api.feature" />
@@ -165,7 +160,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RunCucumberIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAutomationFramework" />
       <extension name="coverage">
         <pattern>
@@ -174,7 +169,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="stepDefinitions" />
-      <option name="MAIN_CLASS_NAME" value="stepDefinitions.TestRunner" />
+      <option name="MAIN_CLASS_NAME" value="stepDefinitions.RunCucumberIT" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
@@ -186,11 +181,11 @@
       <item itemvalue="Cucumber Java.Scenario: Check User login/logout with valid credentials" />
       <item itemvalue="Cucumber Java.Scenario: Check error message with no username and password" />
       <item itemvalue="Cucumber Java.Scenario: Check page returns 200 status code" />
-      <item itemvalue="JUnit.TestRunner" />
+      <item itemvalue="JUnit.RunCucumberIT" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="JUnit.RunCucumberIT" />
         <item itemvalue="Cucumber Java.Scenario: Check User login/logout with valid credentials" />
         <item itemvalue="Cucumber Java.Scenario: Check page returns 200 status code" />
         <item itemvalue="Cucumber Java.Scenario: Check Nicholas Runolfsdottir V exists" />
