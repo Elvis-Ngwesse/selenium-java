@@ -5,29 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be984426-05dc-40be-b11d-3189b48f3995" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/StatusCodePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/factory/GetRequestEX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/Config/data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/features/api.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/features/loginError.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/features/statusCodes.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/APISteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/LoginErrorSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/StatusCodeSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Helper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/reports/ExtentReporting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/reports/reports.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/AccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/AccountPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LogoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LogoutPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/DriverFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ConfigReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ConfigReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/drivers/chromedriver" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chromedriver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Config/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ApplicationHooks/AppHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ApplicationHooks/AppHooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/features/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/LoginSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/TestRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,8 +188,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TestRunner" />
-        <item itemvalue="Cucumber Java.Scenario: Check page returns 200 status code" />
         <item itemvalue="Cucumber Java.Scenario: Check User login/logout with valid credentials" />
+        <item itemvalue="Cucumber Java.Scenario: Check page returns 200 status code" />
         <item itemvalue="Cucumber Java.Scenario: Check Nicholas Runolfsdottir V exists" />
         <item itemvalue="Cucumber Java.Scenario: Check error message with no username and password" />
       </list>
@@ -223,5 +208,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ApplicationHooks/AppHooks.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

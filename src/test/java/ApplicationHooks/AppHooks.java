@@ -1,17 +1,20 @@
 package ApplicationHooks;
 import factory.DriverFactory;
 import io.cucumber.java.After;
+import io.cucumber.java.AfterAll;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import reports.ExtentReporting;
 import utils.ConfigReader;
+
+import java.io.IOException;
 
 public class AppHooks {
     private DriverFactory _driverFactory;
     private WebDriver _webDriver;
     private ConfigReader _configReader;
+    private ExtentReporting _extentReporting = new ExtentReporting();
 
     @Before
     public void getProperty(){
@@ -23,13 +26,13 @@ public class AppHooks {
 
 
     @After
-    public void tearDown(Scenario scenario){
-        if(scenario.isFailed()){
-            String _screenShotName = scenario.getName().replaceAll("","_");
-            byte [] sourcePath = ((TakesScreenshot)_webDriver).getScreenshotAs(OutputType.BYTES);
-            scenario.attach(sourcePath,"image/png",_screenShotName);
-        }
-
+    public void tearDown(Scenario _scenario) throws IOException {
+        _extentReporting.generateExtentReport(_scenario);
         _webDriver.quit();
+    }
+
+    @AfterAll
+    public static void afterAll() {
+        ExtentReporting.flushReport();
     }
 }
